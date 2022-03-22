@@ -1,0 +1,41 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Bancolombia}{2021}{Bancolombia}
+Bancolombia  \harvardyearleft 2021\harvardyearright , `Bancolombia
+  recomendados'.
+\newline\harvardurl{https://tu360.grupobancolombia.com/inmobiliario/onboarding}
+
+\harvarditem{Correa \harvardand\ Barrera}{2021}{Correa}
+Correa, J. \harvardand\ Barrera, C.  \harvardyearleft 2021\harvardyearright ,
+  `Elicitation of the parameters of multiple linear models', {\em Revista
+  Colombiana de Estad{\'i}stica - Applied Statistics} {\bf 44}(1),~159--170.
+
+\harvarditem{Finerri}{1937}{finetti}
+Finerri, B.~D.  \harvardyearleft 1937\harvardyearright , `La prevision: ses
+  lois logigues, ses sources subjectives', {\em Annal es de I'Institut Henri
+  Poincard} {\bf 7},~1--68.
+
+\harvarditem{Planeatubien.com}{2021}{planeatubien}
+Planeatubien.com  \harvardyearleft 2021\harvardyearright , `La dimensi{\'o}n
+  ideal para tu departamento'.
+\newline\harvardurl{https://planeatubien.com/metros-cuadrados-la-dimension-ide%
+al-para-tu-departamento/}
+
+\harvarditem{{\proglang{R} Core Team}}{2021}{R}
+{\proglang{R} Core Team}  \harvardyearleft 2021\harvardyearright , {\em
+  \proglang{R}: A Language and Environment for Statistical Computing}, R
+  Foundation for Statistical Computing, Vienna, Austria.
+\newline\harvardurl{http://www.R-project.org/}
+
+\harvarditem{Tangarife \harvardand\ Correa}{2017}{Tangarife}
+Tangarife, J. \harvardand\ Correa, J.  \harvardyearleft 2017\harvardyearright ,
+  `Elicitaci{\'o}n de una distribuci{\'o}n a priori para el modelo
+  log{\'i}stico', {\em Comunicaciones en Estad{\'i}stica} {\bf
+  10}(2),~225--246.
+
+\harvarditem{Van~Rossum \harvardand\ Drake}{2009}{Python}
+Van~Rossum, G. \harvardand\ Drake, F.~L.  \harvardyearleft
+  2009\harvardyearright , {\em \proglang{Python} 3 Reference Manual},
+  CreateSpace, Scotts Valley, CA.
+
+\end{thebibliography}
