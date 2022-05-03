@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2014.4.25)  22 MAR 2022 12:04
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2014.4.25)  23 MAR 2022 18:44
 entering extended mode
 **Resumen_MAPI_2022.tex
 (D:\GIT\MAPI_Event\Resumen_MAPI_2022.tex
@@ -682,7 +682,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.128 ..., número de habitaciones y de baños, etc…
-                                                  ) con llevando a que el tr...
+                                                  ) conllevando a que el tra...
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
@@ -756,7 +756,7 @@ Here is how much of TeX's memory you used:
  12424 multiletter control sequences out of 15000+200000
  31498 words of font info for 86 fonts, out of 3000000 for 9000
  21 hyphenation exceptions out of 8191
- 53i,12n,40p,1042b,649s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,12n,40p,1027b,649s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Program Files (x86)/MiKTeX 2.8/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Program Files (x86)/MiKTeX 2.8/fonts/enc
@@ -779,7 +779,7 @@ s (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfsi1000.pfb><C:/Program Files (x
 er/sfss0900.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfss1000.pfb><C:/Program Files (x86)/MiKT
 eX 2.8/fonts/type1/public/cm-super/sfti0900.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/sfti1000.
 pfb>
-Output written on Resumen_MAPI_2022.pdf (4 pages, 387579 bytes).
+Output written on Resumen_MAPI_2022.pdf (4 pages, 387680 bytes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)

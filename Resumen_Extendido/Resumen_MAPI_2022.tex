@@ -121,15 +121,15 @@ year = {2022}
 % !!No dejar salto de línea entre el resumen y el comando \keywords{.}¡¡
 % **** --------------------------------------------------------------------------------
 \begin{mainabstract}
-Un sistema de recomendación de inmuebles para Bancolombia hace que la experiencia del cliente al conseguir su próxima vivienda sea memorable, ya que con este nuevo sistema el banco te facilita y acompaña desde la etapa de búsqueda de la vivienda hasta la legalización del inmueble \cite{Bancolombia}. Bancolombia día a día cuenta con millones de datos, sin embargo, no cuenta con la información suficiente para recomendar viviendas de acuerdo con las afinidades y composición familiar de los usuarios, por esto se desarrolló un sistema de recomendación en tiempo real basado en cinco preguntas fundamentales hacia cualquier persona: (1) zona geográfica de interés, (2) rango de precio de búsqueda, (3) presupuesto para cuota inicial, (4) gustos y afinidades y (5) la composición familiar del usuario. El sistema de recomendación inicialmente se basa en como integrar las respuestas de estas cinco preguntas a un conjunto de inmuebles que satisfaga de la mejor forma las respuestas de cada usuario.\\
+Un sistema de recomendación de inmuebles para Bancolombia hace que la experiencia del cliente al conseguir su próxima vivienda sea memorable, ya que con este nuevo sistema el banco te facilita y acompaña desde la etapa de búsqueda de la vivienda hasta la legalización del inmueble \cite{Bancolombia}. Bancolombia día a día cuenta con millones de datos, sin embargo, no cuenta con la información suficiente para recomendar viviendas de acuerdo a las afinidades y composición familiar de los usuarios, por esto se desarrolló un sistema de recomendación en tiempo real basado en cinco preguntas fundamentales hacia cualquier persona: (1) zona geográfica de interés, (2) rango de precio de búsqueda, (3) presupuesto para cuota inicial, (4) gustos y afinidades y (5) la composición familiar del usuario. El sistema de recomendación se basa en como integrar las respuestas de estas cinco preguntas a un conjunto de inmuebles que satisfaga de la mejor forma las respuestas de cada usuario.\\
 
-La forma en cómo se manipulan las respuestas a estas cinco preguntas es clave para obtener una buena recomendación a los usuarios, por esto las tres primeras preguntas se tratan como un conjunto de filtros sobre la base total de inmuebles en la oferta existente actualmente, las dos últimas preguntas se tratarán como variables de clasificación que permitirán darle un orden a la base de ofertas resultante de las tres primeras preguntas, con el sentido que en primer lugar aparezca la oferta más recomendada de compra.\\
+La forma en cómo se manipulan las respuestas a estas cinco preguntas es clave para obtener una buena recomendación a los usuarios, por esto las tres primeras preguntas se tratan como un conjunto de filtros sobre la base total de inmuebles en la oferta existente, las dos últimas preguntas se tratarán como variables de clasificación que permitirán darle un orden a la base de ofertas resultante después de aplicar el filtro mediante las tres primeras preguntas, dando como resultado para cada cliente una lista de recomendaciones donde en primer lugar aparecerá la oferta más recomendada de compra.\\
 
-La composición familiar es una de las variables que tienen mayor preponderancia a la hora de la búsqueda de una vivienda según grandes portales inmobiliarios, como lo describe por ejemplo \citeasnoun{planeatubien} y por supuesto es la variable de mayor influencia sobre el tipo de configuración del inmueble (tamaño del inmueble, número de habitaciones y de baños, etc…) con llevando a que el tratamiento de esta respuesta sea ideal para el éxito del sistema de recomendación propuesto. Sin embargo, dado la importancia de esta variable y la ausencia de información de parte del banco que contengan una relación entre el número de personas a vivir en un inmueble y las características de un inmueble, se optó por simular una base de datos de modelado que permitiera el ajuste una red neuronal a partir de la elicitación de una distribución a priori basada en la distribución beta de acuerdo con el conocimiento experto de varias personas.\\
+La composición familiar es una de las variables que tiene mayor preponderancia a la hora de la búsqueda de una vivienda según grandes portales inmobiliarios, como lo describe por ejemplo \citeasnoun{planeatubien} y por supuesto es la variable de mayor influencia sobre el tipo de configuración del inmueble (tamaño del inmueble, número de habitaciones y de baños, etc…) conllevando a que el tratamiento de esta respuesta sea ideal para el éxito del sistema de recomendación propuesto. Sin embargo, dada la importancia de esta variable y la ausencia de información de parte del banco que contenga una relación entre el número de personas a vivir en un inmueble y las características de un inmueble, se optó por simular una base de datos de modelado que permitirá el ajuste una red neuronal a partir de la elicitación de una distribución a priori basada en la distribución beta de acuerdo con el conocimiento experto de varias personas.\\
 
-Una elicitación es el proceso de hallar una distribución de probabilidad de una variable aleatoria donde dichas probabilidades son basadas en el conocimiento de uno o varios expertos acerca de un punto de interés \cite{finetti}. Para la extracción de este conocimiento se diseña un cuestionario de elicitación tomando consideraciones desde el campo.\\ 
+Una elicitación es el proceso de hallar una distribución de probabilidad de una variable aleatoria donde dichas probabilidades son basadas en el conocimiento de uno o varios expertos acerca de un punto de interés \cite{finetti}. Para la extracción de este conocimiento se diseña un cuestionario de elicitación tomando consideraciones desde el campo de estudio, en este caso el campo inmobiliario.\\ 
 \newpage
-Este proceso de la obtención de una base de datos simulada a partir de una elicitación, para la estimación ha sido estudiada y aplicada por distintos autores como \citeasnoun{Tangarife} quienes estimaron los parámetros de un modelo logístico a partir de un elicitación de una distribución a priori beta y normal truncada, \citeasnoun{Correa} estimo los parámetros de un modelo lineal múltiple a partir de una elicitación bayesiana a varios expertos, el algoritmo propuesto en este articulo para la obtención de la base de datos simulada de la cual se estimaran los parámetros de la red neuronal se basó en la metodología desarrollada por \citeasnoun{Tangarife}.\\
+El proceso de la obtención de una base de datos simulada a partir de una elicitación, para la estimación ha sido estudiada y aplicada por distintos autores como \citeasnoun{Tangarife} quienes estimaron los parámetros de un modelo logístico a partir de un elicitación de una distribución a priori beta y normal truncada. \citeasnoun{Correa} estimaron los parámetros de un modelo lineal múltiple a partir de una elicitación bayesiana a varios expertos, el algoritmo propuesto en este articulo para la obtención de la base de datos simulada de la cual se estimaran los parámetros de la red neuronal se basó en la metodología desarrollada por \citeasnoun{Tangarife}.\\
 
 A continuación, se dará la explicación del algoritmo aplicado para la obtención de una base simulada que dará pie a la estimación de los parámetros de la red neuronal.\\
  
@@ -138,7 +138,7 @@ A continuación, se dará la explicación del algoritmo aplicado para la obtención 
 		\[
 		X_i = \left[x_{i1}, x_{i2}, x_{i3}, x_{i4}\right]
 	\]
-	Donde: $x_{i1}:$ Número de personas en habitar el inmueble, $x_{i2}:$ Tamaño del inmueble, $x_{i3}:$ Número de habitaciones del inmueble, $x_{i4}:$ Número de baños del inmueble;\\ en la tabla \ref{T_dise1} se describe los puntos de diseño seleccionados para las variables $x_{i2}, x_{i3}, x_{i4}$.
+	Donde: $x_{i1}:$ Número de personas en habitar el inmueble, $x_{i2}:$ Tamaño del inmueble (mts), $x_{i3}:$ Número de habitaciones del inmueble, $x_{i4}:$ Número de baños del inmueble;\\ en la tabla \ref{T_dise1} se describe los puntos de diseño seleccionados para las variables $x_{i2}, x_{i3}, x_{i4}$.
 	
 	\begin{table}[!hbt]
 	\begin{center}
@@ -158,11 +158,11 @@ A continuación, se dará la explicación del algoritmo aplicado para la obtención 
 	\end{table}
 
 	Cada uno de los puntos descritos en la tabla \ref{T_dise1} es combinado con los valores de la variable $x_{i1}=1, 2, 3, 4, 5$; obteniendo un total de $35 \quad (k=35)$ puntos de diseño.\\
-la variable respuesta esta definida como:
+La variable respuesta esta definida como:
 	
 	\[y_{j}=
 		\begin{cases}
-		1 & \text{si j-esima persona con una composición familiar $x_{i1}$ adquiere el inmueble}\\
+		1 & \text{si j-ésima persona con una composición familiar $x_{i1}$ adquiere el inmueble}\\
 		0 & \text{en otros casos}
 		\end{cases}
 	\]
@@ -171,12 +171,12 @@ la variable respuesta esta definida como:
 \item Para cada punto de diseño se procede a:
 
 \begin{itemize} 
-	\item se fija un $n$ y se pide al experto dar el número personas con alguna composición familiar $x_{i1}$ que comprarían en una muestra hipotética de tamaño $n$, dígase $Y_0$, calcule $E(\pi)=Y_0/n$. 
+	\item Se fija un $n$ y se pide al experto dar el número personas con alguna composición familiar $x_{i1}$ que comprarían en una muestra hipotética de tamaño $n$, dígase $Y_0$, calcule $E(\pi)=Y_0/n$. 
 	\item Para el mismo $n$ se pide al experto dar el número mínimo de éxitos que él esperaría aceptable, $Y_I$, calcule $\hat{\pi_I}=Y_I/n$. 
 	\item Para el mismo $n$ se pide al experto dar el número máximo de éxitos que él esperaría aceptable, $Y_S$, calcule $\hat{\pi_S}=Y_S/n$. 
 \end{itemize} 
 
-Este paso se hizo con un tamaño $n$ de 100 y se hizo para una muestra de 16 expertos para cada punto de diseño.\\
+Este paso se hizo con un tamaño $n$ de 100 y una muestra de 16 expertos para cada punto de diseño.\\
 
 \item A los valores elicitados en el punto dos, se ajusta una distribución beta para estimar los parámetros $\alpha$ y $\beta$, sean:\\
 $E(\pi)=y_0/n$\\
@@ -189,13 +189,13 @@ los valores de $\alpha$ y $\beta$ se obtienen de minimizar la siguiente función:
 f(\alpha,\beta)=(\pi_I - qbeta(0.05,\alpha,\beta))^{2}+(\pi_S - qbeta(0.95,\alpha,\beta))^{2}+(\pi+(\alpha/(\alpha+\beta)))^{2}
 \]
 
-\item Calcule el $N$ equivalente, esto permite cuantificar el conocimiento del experto en términos de tamaño muestral, este tamaño representa realmente el nivel de conocimiento que el experto tienen en la clasificación adecuada de inmuebles a una composición familiar determinada.
+\item Calcule el $N$ equivalente, esto permite cuantificar el conocimiento del experto en términos de tamaño muestral, este tamaño representa realmente el nivel de conocimiento que los expertos tienen en la clasificación adecuada de inmuebles a una composición familiar determinada.
 
 \[
 N = \frac{4Z_{\alpha/2}^{2}\hat{\pi}(1-\hat{\pi})}{(\hat{\pi_S}-\hat{\pi_I})^{2}}
 \]
 
-\item Para cada nivel repita los siguientes pasos $m$ veces:\\
+\item Para cada nivel se repiten los siguientes pasos $m$ veces:\\
 
 \begin{itemize}
 	\item Genere un valor de la beta con $\alpha_i$ y $\beta_i$ hallados en el punto tres.
@@ -210,7 +210,7 @@ N = \frac{4Z_{\alpha/2}^{2}\hat{\pi}(1-\hat{\pi})}{(\hat{\pi_S}-\hat{\pi_I})^{2}
 \]
 En este paso se obtiene un vector de tamaño $k$, en nuestro caso $k=35$
 
-\item Genere un muestra de valores $y$ a partir de la distribución conjugada de la beta, la distribución binomial.
+\item Genere una muestra de valores $y$ a partir de la distribución conjugada de la beta, la distribución binomial.
 
 \[
 \begin{bmatrix}
@@ -234,10 +234,10 @@ En este paso se obtiene una matriz de tamaño $(n_{eq}*k)$x$5$, donde $n_{eq}$ es
 \end{itemize}
 \end{enumerate}
 
-En nuestro caso el algoritmo fue construido en el sistema computacional \proglang{R} \cite{R} y obtuvimos una base de datos con un total de $770$ mil registros entre todas las combinaciones de puntos de diseño y composiciones familiares con su respectiva variable respuesta. A partir de esta base datos generada, se procedió a estimador una red neuronal por medio del paquete \pkg{Keras} en el sistema computacional \proglang{Python} \cite{Python} con cuatro neuronas de entrada dadas por $x_{i1}$, $x_{i2}$, $x_{i3}$ y $x_{i4}$ y una capa oculta de seis neuronas con función de activación sigmoide, obteniendo un $AUC = 80\%$ en base de validación y prueba.\\
+En nuestro caso el algoritmo fue construido en el sistema computacional \proglang{R} \cite{R} y obtuvimos una base de datos con un total de $770$ mil registros entre todas las combinaciones de puntos de diseño y composiciones familiares con su respectiva variable respuesta. A partir de esta base de datos generada, se procedió a estimador una red neuronal por medio del paquete \pkg{Keras} en el sistema computacional \proglang{Python} \cite{Python} con cuatro neuronas de entrada dadas por $x_{i1}$, $x_{i2}$, $x_{i3}$ y $x_{i4}$ y una capa oculta de seis neuronas con función de activación sigmoide, obteniendo un $AUC = 80\%$ en base de validación y prueba.\\
 
 Con este modelo puesto en producción los clientes de Bancolombia han podido obtener una mejor experiencia a la hora de adquirir una vivienda nueva y al modelo ir obteniendo información real de los mismos clientes que le permitirá retroalimentar el modelo inicialmente desarrollado por una base de datos simulada. 
-\keywords{Sistema de Recomendación, Inmubeles, Estadística Bayesiana, Redes Neuronales}
+\keywords{Sistema de Recomendación, Inmuebles, Estadística Bayesiana, Redes Neuronales}
 \end{mainabstract}
 
 \bibliography{symposium}
