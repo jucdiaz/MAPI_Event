@@ -1,0 +1,581 @@
+% Este documento LaTeX fue diseñado por profesores  del Departamento de Matemáticas 
+% de la Universidad de Antioqua (http://ciencias.udea.edu.co/). Usted puede modificarlo
+% y personalizarlo a su gusto bajo los términos de la licencia de documentación libre GNU.
+% http://es.wikipedia.org/w/index.php?title=Licencia_de_documentaci%C3%B3n_libre_de_GNU&oldid=15717448
+
+%\documentclass[serif,9pt]{beamer}
+%\setbeamertemplate{navigation symbols}{}
+
+%\setbeamercolor{frametitle}{fg=black,bg=white}
+%\setbeamercolor{title}{fg=black,bg=yellow!85!orange}
+%\usetheme{AnnArbor}
+
+%\documentclass{beamer}
+
+\documentclass[serif,9pt]{beamer}
+\usetheme{Copenhagen}
+%%\usepackage{german}
+%\usepackage[latin1]{inputenc}
+%
+%\usepackage[spanish]{babel} % division de silabas en espaÃ±ol.
+%%\usepackage{t1enc}
+%%\usepackage{amsmath,bbold,bbm}
+%\usepackage{verbatim}
+%\usepackage{float}
+%\usepackage[pdftex]{graphicx,color}
+%%\usepackage[dvips]{epsfig}
+%%\usepackage{multirow}
+%\usepackage{amssymb}
+%%\usepackage[notref,color]{showkeys}
+
+% -------------------------------------------------------------------------------------
+% Espacio reservado para la carga de los paquetes por parte del autor
+% **** --------------------------------------------------------------------------------
+\usepackage[latin1]{inputenc}
+\markright{}
+
+\usepackage[spanish]{babel}
+\usepackage{amsxtra}
+\usepackage{amstext}
+\usepackage{graphicx, xcolor, lipsum}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath,amsthm} 
+\usepackage{bm} 
+\usepackage{textcomp}
+\usepackage{setspace} 
+\usepackage{lscape} 
+\usepackage{multicol}
+\usepackage{multirow} 
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{ragged2e}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{pifont} % Para incluir simbolos en itemize
+\usepackage{hyperref}
+
+%\lstdefineformat{R}{~=\( \sim \)}
+%\lstset{basicstyle=\ttfamily,format=R}
+%\def\endlstset{\oldendv\egroup\fboxsep0pt \noindent\colorbox{fhbcolor}{\usebox0}\par}
+
+\hypersetup{pagebackref,colorlinks,linkcolor=black,citecolor=black,breaklinks=true}
+\usepackage{enumitem}  % format a list as to remove the spaces between list items
+\usepackage{upquote}   % to obtain ' instead of ’ with R code
+% New for newcommand, proglang and code
+\newcommand{\pkg}[1]{{\normalfont\fontseries{b}\selectfont #1}}
+\let\proglang=\textsf
+\let\code=\texttt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Definición del color para el cuadro de código de R
+\let\oldv\verbatim
+\let\oldendv\endverbatim
+\def\verbatim{\par\setbox0\vbox\bgroup\oldv}
+%\def\endverbatim{\oldendv\egroup\fboxsep0pt \noindent\colorbox[gray]{0.96}{\usebox0}\par}
+\definecolor{fhbcolor}{HTML}{F7F9EF} % Para definir el color de la caja
+\def\endverbatim{\oldendv\egroup\fboxsep0pt \noindent\colorbox{fhbcolor}{\usebox0}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{caption}[numbered] % enumera las figuras y cuadros
+\spanishdecimal{.} %Cambia , por puntos en las formulas
+
+\begin{document}
+\justifying
+
+\title[Sistema de recomendación de inmuebles Bancolombia \hspace{10mm} \insertframenumber/\inserttotalframenumber]{Sistema de recomendación de inmuebles Bancolombia basado en simulación bayesiana y redes neuronales}  
+\author[Juan Camilo Díaz Zapata]{\textbf{Juan Camilo Díaz Zapata} \\ \textit{Cientifico de Datos lider}}
+\institute[Bancolombia]{Gerencia de Modelos Analíticos\\ Centro de Excelencia en Analítica\\ Bancolombia}
+\date[Junio, 2022]{MAPI -- Segunda Conferencia Colombiana de Matemáticas Aplicadas e Industriales}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Contenido}
+\tableofcontents
+\end{frame} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introducción}
+\begin{frame}\frametitle{Motivación}
+
+Crear un sistema de recomendación de inmuebles para Bancolombia donde la experiencia del cliente y no cliente al conseguir su próxima vivienda sea memorable, ya que te permita acompañar desde la etapa de búsqueda de la vivienda hasta la legalización del inmueble 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Planteamiento del Problema}
+Bancolombia no cuenta con la información suficiente para recomendar viviendas de acuerdo a las a las características definidas como afinidades y composición familiar de los clientes y los no clientes \pause \medskip
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.35]{meme1.png}	
+		%\caption{Pregunta 1: Zona de interés}
+		%\label{Mapes}
+	\end{center}
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Solución planteada}
+Se desarrolló un sistema de recomendación en tiempo real basado en cinco preguntas fundamentales hacia cualquier persona:\pause \medskip
+
+\begin{enumerate}
+	\item Zona geográfica de interés \pause \medskip
+	\item Rango de precio de búsqueda \pause \medskip
+	\item Presupuesto para cuota inicial \pause \medskip
+	\item Gustos y afinidades\pause \medskip
+	\item la composición familiar del usuario
+\end{enumerate}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Experiencia}
+%\begin{frame}\frametitle{Cuestionario}
+%
+%\begin{figure}
+	%\begin{center}
+		%\includegraphics[scale=0.35]{preg1.png}	
+		%\caption{Pregunta 1: Zona de interés}
+		%%\label{Mapes}
+	%\end{center}
+%\end{figure}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}\frametitle{Cuestionario}
+%
+%\begin{figure}
+	%\begin{center}
+		%\includegraphics[scale=0.35]{preg2.png}	
+		%\caption{Pregunta 2: Rango de precios}
+		%%\label{Mapes}
+	%\end{center}
+%\end{figure}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}\frametitle{Cuestionario}
+%
+%\begin{figure}
+	%\begin{center}
+		%\includegraphics[scale=0.35]{preg3.png}	
+		%\caption{Pregunta 3: Ahorros para tu vivienda}
+		%%\label{Mapes}
+	%\end{center}
+%\end{figure}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}\frametitle{Cuestionario}
+%
+%\begin{figure}
+	%\begin{center}
+		%\includegraphics[scale=0.35]{preg4.png}	
+		%\caption{Pregunta 4: Lugares de interés}
+		%%\label{Mapes}
+	%\end{center}
+%\end{figure}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}\frametitle{Cuestionario}
+%
+%\begin{figure}
+	%\begin{center}
+		%\includegraphics[scale=0.35]{preg5.png}	
+		%\caption{Pregunta 5: Cantidad de personas a vivir}
+		%%\label{Mapes}
+	%\end{center}
+%\end{figure}
+%
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}\frametitle{Resultado}
+%
+%\begin{figure}
+	%\begin{center}
+		%\includegraphics[scale=0.35]{Rpta.png}	
+		%\caption{Resultado modelo de recomendación}
+		%%\label{Mapes}
+	%\end{center}
+%\end{figure}
+%
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Implementación}
+\subsection{Preguntas tipo filtro}
+\begin{frame}\frametitle{Preguntas tipo filtro}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.47]{img_apoyo1.png}	
+		\caption{Filtrado de ofertas existentes}
+		%\label{Mapes}
+	\end{center}
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Preguntas tipo clasificación: gusto y afinidades}
+\begin{frame}\frametitle{Pregunta gusto y afinidades}
+
+Dentro de esta pregunta el usuario puede optar por seleccionar cada una de ocho posibles categorías, donde cada variable es dicótoma: 
+
+	\[x_{i}=
+		\begin{cases}
+		1 & \text{si 1-ésima característica es seleccionada}\\
+		0 & \text{en otros casos}
+		\end{cases}
+	\]
+	$\quad i=1,2,\ldots,8$\\ \pause \medskip
+	
+	generando un vector binario del tipo:
+	\[
+		X = \left[x_{1}, x_{2}, \ldots, x_{8}\right]
+	\]\pause \medskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{frame}\frametitle{Pregunta gusto y afinidades}
+	adicional cada inmueble seleccionado tiene un vector de características previamente calculado que califica la influencia de cada categoría en cada inmueble: 
+		
+	\[
+		A = \left[a_{1}, a_{2}, \ldots, a_{8}\right]
+	\]
+	$\quad$ donde $0 \leq a_{i} \leq 1$ \\ \pause \medskip
+	
+	Al final cada inmueble tendrá un score de gusto que permitirá clasificar los inmuebles de acuerdo a los gustos y afinidades: 
+		
+	\begin{equation}
+			S_1 = \frac{A^{\top} \cdot X}{\sum_{i=1}^{8}x_i}
+	\label{eq_score1}
+	\end{equation}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%\subsection{Preguntas tipo clasificación: composición familiar}
+%\begin{frame}\frametitle{¿Que es una elicitación?}
+%
+%Una elicitación es el proceso de hallar una distribución de probabilidad de una variable aleatoria donde dichas probabilidades son basadas en el conocimiento de uno o varios expertos acerca de un punto de interés \cite{finetti}.\\ \pause \medskip
+%
+%\vspace{1cm}
+%
+%{\Large Estado del Arte}
+%
+%\begin{itemize}
+	%\item[\ding{52}] Tangarife y Barrera \cite{Tangarife} quienes estimaron los parámetros de un modelo logístico a partir de un elicitación de una distribución a priori beta y normal truncada. \pause \medskip
+	%\item[\ding{52}] Correa y Barrera \cite{Correa} estimaron los parámetros de un modelo lineal múltiple a partir de una elicitación bayesiana a varios expertos. \pause \medskip
+%\end{itemize}
+%
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Preguntas tipo clasificación: composición familiar}
+\begin{frame}\frametitle{Planteamento Solución}
+
+Dado que Bancolombia no cuenta con información que permita concluir de acuerdo a la composición familiar cuales son los inmuebles más acordes y dada la relevancia de esta pregunta en la elección de un inmueble \cite{planeatubien}, se aplicó una \textbf{elicitación} basada en el algoritmo de Tangarife y Barrera \cite{Tangarife} para la obtención de una \textbf{base de datos simulada} de la cual se estimaron los parámetros de una \textbf{red neuronal} que permitió dar un score de clasificación para cada inmueble de las ofertas filtradas por las tres primeras preguntas. 
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Algoritmo Aplicado}
+\begin{frame}\frametitle{Paso 1}
+
+Se deben fijar los niveles de las covariables 
+
+\[
+X_1, X_2,\ldots, X_k
+\] \pause \medskip
+	$\quad$ donde:
+	
+	\[
+		X_i = \left[x_{i1}, x_{i2}, x_{i3}, x_{i4}\right]
+	\] \pause \medskip
+	$\quad$ donde:
+	
+	\begin{itemize}
+		\item $x_{i1}:$ Número de personas en habitar el inmueble.
+		\item $x_{i2}:$ Tamaño del inmueble (mts).
+		\item $x_{i3}:$ Número de habitaciones del inmueble.
+		\item $x_{i4}:$ Número de baños del inmueble.
+	\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Paso 1}
+
+En la tabla \ref{T_dise1} se describe los puntos de diseño seleccionados para las variables $x_{i2}, x_{i3}, x_{i4}$.
+
+	\begin{table}[!hbt]
+	\begin{center}
+	\begin{tabular}{|c|c|c|}\hline
+	$x_{i2}$ & $x_{i3}$ & $x_{i4}$\\ \hline \hline
+	46 & 1 & 1\\ \hline
+	63 & 2 & 2\\ \hline
+	70 & 3 & 2\\ \hline
+	85 & 3 & 2\\ \hline
+	100 & 3 & 2\\ \hline
+	120 & 4 & 3\\ \hline
+	180 & 4 & 3\\ \hline
+	\end{tabular}
+	\caption{Puntos de diseño para las variables $x_{i2}, x_{i3}, x_{i4}$}
+	\label{T_dise1}
+	\end{center}
+	\end{table}
+
+\pause \medskip
+	Cada uno de los puntos descritos en la tabla \ref{T_dise1} es combinado con los valores de la variable $x_{i1}=1, 2, 3, 4, 5$; obteniendo un total de $35 \quad (k=35)$ puntos de diseño.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Paso 1}
+
+La variable respuesta esta definida como:
+	
+	\[y_{j}=
+		\begin{cases}
+		1 & \text{si j-ésimo usuario con una composición familiar $x_{i1}$ adquiere el inmueble}\\
+		0 & \text{en otros casos}
+		\end{cases}
+	\]
+	$\quad j=1,2,\ldots,n$\\
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Paso 2}
+
+\begin{itemize} 
+	\item Se fija un $n$ y se pide al experto dar el número personas con alguna composición familiar $x_{i1}$ que comprarían en una muestra hipotética de tamaño $n$, dígase $Y_0$, calcule $E(\pi)=Y_0/n$. \pause \medskip
+	\item Para el mismo $n$ se pide al experto dar el número mínimo de éxitos que él esperaría aceptable, $Y_I$, calcule $\hat{\pi_I}=Y_I/n$. \pause \medskip
+	\item Para el mismo $n$ se pide al experto dar el número máximo de éxitos que él esperaría aceptable, $Y_S$, calcule $\hat{\pi_S}=Y_S/n$.  \pause \medskip
+\end{itemize} 
+\pause \medskip
+Este paso se hizo con un tamaño $n$ de 100 y una muestra de 16 expertos para cada punto de diseño.
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}\frametitle{Paso 2}
+%
+%\begin{figure}
+	%\begin{center}
+		%\includegraphics[scale=0.47]{Ejem_Elic.png}	
+		%\caption{Ejemplo de parte de elicitación realizada}
+		%%\label{Mapes}
+	%\end{center}
+%\end{figure}
+%
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Paso 3}
+
+A los valores elicitados en el paso dos, se ajusta una distribución beta para estimar los parámetros $\alpha$ y $\beta$, sean:\\
+$E(\pi)=y_0/n$\\
+$P(\pi \leq Y_I/n)=0.05$\\
+$P(\pi \geq Y_S/n)=0.05$\\
+
+\pause \medskip
+los valores de $\alpha$ y $\beta$ se obtienen de minimizar la siguiente función:
+
+\[
+f(\alpha,\beta)=(\pi_I - qbeta(0.05,\alpha,\beta))^{2}+(\pi_S - qbeta(0.95,\alpha,\beta))^{2}+(\pi+(\alpha/(\alpha+\beta)))^{2}
+\]
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Paso 4}
+
+Calcule el $N$ equivalente, esto permite cuantificar el conocimiento del experto en términos de tamaño muestral, este tamaño representa realmente el nivel de conocimiento que los expertos tienen en la clasificación adecuada de inmuebles a una composición familiar determinada.
+
+\[
+N = \frac{4Z_{\alpha/2}^{2}\hat{\pi}(1-\hat{\pi})}{(\hat{\pi_S}-\hat{\pi_I})^{2}}
+\]
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Paso 5}
+
+Para cada nivel se repiten los siguientes pasos $m$ veces:
+
+\begin{itemize}
+	\item[\ding{68}] Genere un valor de la beta con $\alpha_i$ y $\beta_i$ hallados en el punto tres.
+
+\[
+\begin{bmatrix}
+	\pi_1\\
+	\pi_2\\
+	\vdots\\
+	\pi_k
+	\end{bmatrix}
+\]
+En este paso se obtiene un vector de tamaño $k$, en nuestro caso $k=35$
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Paso 5}
+
+\begin{itemize}
+\item[\ding{68}] Genere una muestra de valores $y$ a partir de la distribución conjugada de la beta, la distribución binomial.
+
+\[
+\begin{bmatrix}
+	y_1^{(1)}, & X_1\\
+	y_2^{(1)}, & X_1\\
+	\vdots & \vdots\\
+	y_{n_{eq}}^{(1)}, & X_1\\
+	%y_1^{(2)}, & X_2\\
+	%y_2^{(2)}, & X_2\\
+	%\vdots & \vdots\\
+	%y_{n_{eq}}^{(2)}, & X_2\\
+	\vdots & \vdots\\
+	y_1^{(k)}, & X_k\\
+	y_2^{(k)}, & X_k\\
+	\vdots & \vdots\\
+	y_{n_{eq}}^{(k)}, & X_k\\
+	\end{bmatrix}
+\]
+
+\pause 
+
+En este paso se obtiene una matriz de tamaño $(n_{eq}*k)$x$5$, donde $n_{eq}$ es el $N$ equivalente hallado en el paso cuatro y $X_k$ es una variable que representa los niveles definidos en el paso uno de tamaño cuatro.
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Resultados}
+\subsection{Resultado Simulación}
+\begin{frame}\frametitle{Resultado Simulación}
+
+El algoritmo fue construido en el sistema computacional \proglang{R} \cite{R} y obtuvimos una base de datos con un total de $770$ mil registros entre todas las combinaciones de puntos de diseño y composiciones familiares con su respectiva variable respuesta. \href{https://github.com/jucdiaz/Simulacion_Bayesiana_Inmuebles}{Respositorio GitHub} 
+
+
+	\begin{table}[!hbt]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|}\hline
+	$i$ &$y_{1}$ & $x_{1}$ &$x_{2}$ & $x_{3}$ & $x_{4}$\\ \hline \hline
+	1 & 1 & 1 & 46 & 1 & 1\\ \hline
+	2 & 1 & 1 & 46 & 1 & 1\\ \hline
+	3 & 0 & 2 & 46 & 1 & 1\\ \hline
+	4 & 0 & 4 & 63 & 2 & 2\\ \hline
+  5 & 1 & 2 & 63 & 2 & 2\\ \hline
+	$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$\\ \hline
+	768 & 1 & 3 & 70 & 3 & 2\\ \hline
+	769 & 0 & 1 & 85 & 3 & 2\\ \hline
+	770 & 1 & 5 & 180 & 3 & 2\\ \hline
+	\end{tabular}
+	\caption{Ejemplo de base de modelación resultante}
+	\end{center}
+	\end{table}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Resultado Modelación}
+\begin{frame}\frametitle{Resultado Modelación}
+
+A partir de esta base de datos generada, se procedió a estimador una red neuronal por medio del paquete \pkg{Keras} en el sistema computacional \proglang{Python} \cite{Python} con cuatro neuronas de entrada dadas por $x_{i1}$, $x_{i2}$, $x_{i3}$ y $x_{i4}$ y una capa oculta de seis neuronas con función de activación sigmoide, obteniendo un $AUC = 80\%$ en base de validación y prueba.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.42]{Tarin_model.png}\quad
+		\includegraphics[scale=0.2]{qrcode_github.png}	
+		%\caption{Ejemplo de parte de elicitación realizada}
+		\label{modelo}
+	\end{center}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Puesta en producción}
+\begin{frame}\frametitle{Puesta en producción}
+
+Al tener un modelo donde a partir de las características principales del inmueble (área, numero habitaciones, numero de baños) y la respuesta a la pregunta cinco (número integrantes a vivir en la inmueble) es posible dar un score o probabilidad de gusto sobre cada inmueble en oferta. 
+
+	\begin{equation} 
+			S_2 = f(x_{i1}, x_{i2}, x_{i3}, x_{i4}) 
+	\label{eq_score2} 
+	\end{equation}  
+
+donde $f(\cdot)$ es el modelo de red neuronal entrenado en \ref{modelo}. \pause \medskip 
+
+Dado las ecuaciones definidas en \eqref{eq_score1} y \eqref{eq_score2} podemos obtener un score final de clasificación que definirá el orden de recomendación de las ofertas que cumplen las tres primeras preguntas al cliente. 
+
+\[
+S_f = W_1 S_1 + W_2 S_2
+\]
+donde $ 0 \leq W_1 + W_2 \leq 1$
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}\frametitle{Puesta en producción}
+%
+%La puesta en producción se realizó a través de una API alojada en \pkg{AWS} donde la información será actualizada con una frecuencia estable, a continuación, se muestran la arquitectura de software mostrando los componentes utilizados para el fácil consumo del modelo y de los datos de forma continua. 
+%
+%\begin{figure}
+	%\begin{center}
+		%\includegraphics[scale=0.42]{Arqui.png}\quad
+		%\caption{Arquitectura de la solución}
+		%%\label{Mapes}
+	%\end{center}
+%\end{figure}
+%
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Trabajos en desarrollo}
+%\begin{frame}\frametitle{Trabajos en desarrollo}
+%
+%\begin{enumerate}
+	%\item Obtención automática de respuestas a preguntas y elección de favoritos en producción. 
+	%\item rentrenamiento continuo de la red neuronal con datos simulados y datos reales obtenidos en el punto anterior. 
+	%\item Explorar nuevas arquitecturas de la red neuronal y/o nuevos algoritmos que capturen de mejor forma el comportamiento de los datos reales y simulados. 
+%\end{enumerate}
+%
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Referencias} 
+\begin{frame}[allowframebreaks]
+  \frametitle{Referencias}
+  \nocite{planeatubien,Tangarife,Correa, finetti}
+  
+  \bibliographystyle{abbrv}
+  \bibliography{symposium}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame} \frametitle{}
+\begin{center}
+\textbf{{\Huge Muchas Gracias...}}
+\end{center}
+
+
+\end{frame}
+
+
+
+\end{document}

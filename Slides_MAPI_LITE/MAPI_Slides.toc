@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\'on}{3}{0}{1}
+\beamer@sectionintoc {2}{Implementaci\'on}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{Preguntas tipo filtro}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Preguntas tipo clasificaci\'on: gusto y afinidades}{13}{0}{2}
+\beamer@subsectionintoc {2}{3}{Preguntas tipo clasificaci\'on: composici\'on familiar}{18}{0}{2}
+\beamer@subsectionintoc {2}{4}{Algoritmo Aplicado}{19}{0}{2}
+\beamer@sectionintoc {3}{Resultados}{36}{0}{3}
+\beamer@subsectionintoc {3}{1}{Resultado Simulaci\'on}{36}{0}{3}
+\beamer@subsectionintoc {3}{2}{Resultado Modelaci\'on}{37}{0}{3}
+\beamer@subsectionintoc {3}{3}{Puesta en producci\'on}{38}{0}{3}
+\beamer@sectionintoc {4}{Referencias}{40}{0}{4}

@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+
+\bibitem{Correa}
+J.~Correa and C.~Barrera.
+\newblock Elicitation of the parameters of multiple linear models.
+\newblock {\em Revista Colombiana de Estad{\'i}stica - Applied Statistics},
+  44(1):159--170, 2021.
+
+\bibitem{finetti}
+B.~D. Finerri.
+\newblock La prevision: ses lois logigues, ses sources subjectives.
+\newblock {\em Annal es de I'Institut Henri Poincard}, 7:1--68, 1937.
+
+\bibitem{planeatubien}
+Planeatubien.com.
+\newblock La dimensi{\'o}n ideal para tu departamento, 2021.
+
+\bibitem{R}
+{\proglang{R} Core Team}.
+\newblock {\em \proglang{R}: A Language and Environment for Statistical
+  Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2021.
+
+\bibitem{Tangarife}
+J.~Tangarife and J.~Correa.
+\newblock Elicitaci{\'o}n de una distribuci{\'o}n a priori para el modelo
+  log{\'i}stico.
+\newblock {\em Comunicaciones en Estad{\'i}stica}, 10(2):225--246, 2017.
+
+\bibitem{Python}
+G.~Van~Rossum and F.~L. Drake.
+\newblock {\em \proglang{Python} 3 Reference Manual}.
+\newblock CreateSpace, Scotts Valley, CA, 2009.
+
+\end{thebibliography}
