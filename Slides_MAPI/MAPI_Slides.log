@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2014.4.25)  12 MAY 2022 13:58
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2014.4.25)  7 JUN 2022 11:22
 entering extended mode
 **MAPI_Slides.tex
 (D:\GIT\MAPI_Event\Slides_MAPI\MAPI_Slides.tex
@@ -1556,10 +1556,10 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 \tf@nav=\write5
 \tf@toc=\write6
 \tf@snm=\write7
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 581.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 581.
  (D:\GIT\MAPI_Event\Slides_MAPI\MAPI_Slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 579.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 581.
 Package rerunfilecheck Info: File `MAPI_Slides.out' has not changed.
 (rerunfilecheck)             Checksum: 3A5C2ADAEC69D12F2E96F4E1BA6F3F02;878.
 
@@ -1569,11 +1569,11 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 15435 strings out of 495285
- 271783 string characters out of 3179872
+ 15437 strings out of 495285
+ 271802 string characters out of 3179872
  450243 words of memory out of 3000000
- 18002 multiletter control sequences out of 15000+200000
- 15655 words of font info for 59 fonts, out of 3000000 for 9000
+ 18003 multiletter control sequences out of 15000+200000
+ 16007 words of font info for 60 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,20n,62p,593b,757s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/t
@@ -1584,14 +1584,14 @@ s (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x
 ts/cm/cmmi9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKT
 eX 2.8/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr6.pf
 b><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
-pe1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program 
-Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/a
-msfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)
-/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/zapfding/uzdr.pf
-b>
-Output written on MAPI_Slides.pdf (55 pages, 2730902 bytes).
+pe1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Program 
+Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/am
+sfonts/cm/cmssi9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)
+/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/c
+mti9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on MAPI_Slides.pdf (55 pages, 2741635 bytes).
 PDF statistics:
- 2166 PDF objects out of 2487 (max. 8388607)
+ 2170 PDF objects out of 2487 (max. 8388607)
  134 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
