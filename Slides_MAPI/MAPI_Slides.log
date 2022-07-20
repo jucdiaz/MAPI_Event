@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2014.4.25)  7 JUN 2022 11:22
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2014.4.25)  19 JUL 2022 21:20
 entering extended mode
 **MAPI_Slides.tex
 (D:\GIT\MAPI_Event\Slides_MAPI\MAPI_Slides.tex
@@ -1070,18 +1070,21 @@ Overfull \hbox (41.85307pt too wide) has occurred while \output is active
 
 [3
 
-] <meme1.png, id=202, 313.17pt x 313.77225pt>
-File: meme1.png Graphic file (type png)
- <use meme1.png>
+] <portada.png, id=202, 916.92563pt x 370.38374pt>
+File: portada.png Graphic file (type png)
+ <use portada.png>
+Overfull \hbox (13.6389pt too wide) in paragraph at lines 118--118
+ [] 
+ []
+
+
 Overfull \hbox (41.85307pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [4
 
- <D:/GIT/MAPI_Event/Slides_MAPI/meme1.png>]
-File: meme1.png Graphic file (type png)
- <use meme1.png>
+ <D:/GIT/MAPI_Event/Slides_MAPI/portada.png>]
 Overfull \hbox (41.85307pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1103,6 +1106,27 @@ Overfull \hbox (41.85307pt too wide) has occurred while \output is active
 [7
 
 ]
+LaTeX Font Info:    Try loading font information for U+msa on input line 145.
+ ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 145.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 145.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 145.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 145.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 145.
+
 Overfull \hbox (41.85307pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1130,28 +1154,17 @@ Overfull \hbox (41.85307pt too wide) has occurred while \output is active
 
 [11
 
-] <preg1.png, id=460, 894.34125pt x 511.9125pt>
-File: preg1.png Graphic file (type png)
- <use preg1.png>
-Overfull \hbox (5.73425pt too wide) in paragraph at lines 147--147
- [] 
- []
-
-
-Overfull \vbox (25.04608pt too high) detected at line 147
- []
-
-
+]
 Overfull \hbox (41.85307pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [12
 
- <D:/GIT/MAPI_Event/Slides_MAPI/preg1.png>] <preg2.png, id=496, 684.75826pt x 473.97075pt>
-File: preg2.png Graphic file (type png)
- <use preg2.png>
-Overfull \vbox (0.81627pt too high) detected at line 160
+] <Login.png, id=495, 412.54124pt x 398.99063pt>
+File: Login.png Graphic file (type png)
+ <use Login.png>
+Overfull \vbox (7.9133pt too high) detected at line 158
  []
 
 
@@ -1161,91 +1174,49 @@ Overfull \hbox (41.85307pt too wide) has occurred while \output is active
 
 [13
 
- <D:/GIT/MAPI_Event/Slides_MAPI/preg2.png>] <preg3.png, id=531, 501.072pt x 475.7775pt>
-File: preg3.png Graphic file (type png)
- <use preg3.png>
-Overfull \vbox (1.44864pt too high) detected at line 173
- []
+ <D:/GIT/MAPI_Event/Slides_MAPI/Login.png>] <recomendados3.png, id=530, 291.33844pt x 264.99pt>
+File: recomendados3.png Graphic file (type png)
 
-
+<use recomendados3.png>
 Overfull \hbox (41.85307pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [14
 
- <D:/GIT/MAPI_Event/Slides_MAPI/preg3.png>] <preg4.png, id=565, 872.058pt x 483.0045pt>
-File: preg4.png Graphic file (type png)
- <use preg4.png>
-Overfull \vbox (3.97812pt too high) detected at line 186
- []
-
-
+ <D:/GIT/MAPI_Event/Slides_MAPI/recomendados3.png>] <meme1.png, id=564, 313.17pt x 313.77225pt>
+File: meme1.png Graphic file (type png)
+ <use meme1.png>
 Overfull \hbox (41.85307pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [15
 
- <D:/GIT/MAPI_Event/Slides_MAPI/preg4.png>] <preg5.png, id=599, 566.115pt x 453.49425pt>
-File: preg5.png Graphic file (type png)
- <use preg5.png>
-Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ <D:/GIT/MAPI_Event/Slides_MAPI/meme1.png>]
+File: meme1.png Graphic file (type png)
+ <use meme1.png>
+Overfull \hbox (41.85307pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [16
 
- <D:/GIT/MAPI_Event/Slides_MAPI/preg5.png>] <Rpta.png, id=632, 921.4425pt x 314.97675pt>
-File: Rpta.png Graphic file (type png)
- <use Rpta.png>
-Overfull \hbox (15.21983pt too wide) in paragraph at lines 212--212
- [] 
- []
-
-
+]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [17
 
- <D:/GIT/MAPI_Event/Slides_MAPI/Rpta.png>] <img_apoyo1.png, id=665, 714.87074pt x 290.2845pt>
-File: img_apoyo1.png Graphic file (type png)
- <use img_apoyo1.png>
-Overfull \hbox (28.69942pt too wide) in paragraph at lines 227--227
- [] 
- []
-
-
+]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [18
 
- <D:/GIT/MAPI_Event/Slides_MAPI/img_apoyo1.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 247.
- ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 247.
-
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 247.
-
-("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ulasy.fd"
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 247.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 247.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 247.
-
+]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1273,56 +1244,101 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 
 [22
 
-]
+] <preg1.png, id=821, 894.34125pt x 511.9125pt>
+File: preg1.png Graphic file (type png)
+ <use preg1.png>
+Overfull \hbox (5.73425pt too wide) in paragraph at lines 213--213
+ [] 
+ []
+
+
+Overfull \vbox (25.04608pt too high) detected at line 213
+ []
+
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [23
 
-]
+ <D:/GIT/MAPI_Event/Slides_MAPI/preg1.png>] <preg2.png, id=857, 684.75826pt x 473.97075pt>
+File: preg2.png Graphic file (type png)
+ <use preg2.png>
+Overfull \vbox (0.81627pt too high) detected at line 226
+ []
+
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [24
 
-]
+ <D:/GIT/MAPI_Event/Slides_MAPI/preg2.png>] <preg3.png, id=891, 501.072pt x 475.7775pt>
+File: preg3.png Graphic file (type png)
+ <use preg3.png>
+Overfull \vbox (1.44864pt too high) detected at line 239
+ []
+
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [25
 
-]
+ <D:/GIT/MAPI_Event/Slides_MAPI/preg3.png>] <preg4.png, id=926, 872.058pt x 483.0045pt>
+File: preg4.png Graphic file (type png)
+ <use preg4.png>
+Overfull \vbox (3.97812pt too high) detected at line 252
+ []
+
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [26
 
-]
+ <D:/GIT/MAPI_Event/Slides_MAPI/preg4.png>] <preg5.png, id=960, 566.115pt x 453.49425pt>
+File: preg5.png Graphic file (type png)
+ <use preg5.png>
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [27
 
-]
+ <D:/GIT/MAPI_Event/Slides_MAPI/preg5.png>] <Rpta.png, id=993, 921.4425pt x 314.97675pt>
+File: Rpta.png Graphic file (type png)
+ <use Rpta.png>
+Overfull \hbox (15.21983pt too wide) in paragraph at lines 278--278
+ [] 
+ []
+
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [28
 
-]
+ <D:/GIT/MAPI_Event/Slides_MAPI/Rpta.png>] <img_apoyo1.png, id=1026, 714.87074pt x 290.2845pt>
+File: img_apoyo1.png Graphic file (type png)
+ <use img_apoyo1.png>
+Overfull \hbox (28.69942pt too wide) in paragraph at lines 293--293
+ [] 
+ []
+
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [29
 
-]
+ <D:/GIT/MAPI_Event/Slides_MAPI/img_apoyo1.png>]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1337,9 +1353,6 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 [31
 
 ]
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 341.
-
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1354,11 +1367,6 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 [33
 
 ]
-Overfull \hbox (29.2531pt too wide) detected at line 356
-\OML/cmm/m/it/9 y[] \OT1/cmr/m/n/9 = []
- []
-
-
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1400,29 +1408,14 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 
 [39
 
-] <Ejem_Elic.png, id=1492, 510.10574pt x 355.3275pt>
-File: Ejem_Elic.png Graphic file (type png)
- <use Ejem_Elic.png>
-Overfull \vbox (1.92796pt too high) detected at line 383
- []
-
-
+]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [40
 
- <D:/GIT/MAPI_Event/Slides_MAPI/Ejem_Elic.png>]
-Overfull \hbox (1.94128pt too wide) detected at line 400
-\OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ) = (\OML/cmm/m/it/9 [] \OMS/cmsy/m/n/9   \OML/cmm/
-m/it/9 qbeta\OT1/cmr/m/n/9 (0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 05\OML/cmm/m/it/9 ; ; \OT1/cmr/m/n/9 ))[] + (\OML/cmm/m/i
-t/9 [] \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 qbeta\OT1/cmr/m/n/9 (0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 95\OML/cmm/m/it/9 ; ; 
-\OT1/cmr/m/n/9 ))[] + (\OML/cmm/m/it/9  \OT1/cmr/m/n/9 + (\OML/cmm/m/it/9 =\OT1/cmr/m/n/9 (\OML/cmm/m/it/9  \OT1/cmr/
-m/n/9 + \OML/cmm/m/it/9 \OT1/cmr/m/n/9 )))[]
- []
-
-
+]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1430,15 +1423,6 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 [41
 
 ]
-Overfull \hbox (1.94128pt too wide) detected at line 400
-\OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ) = (\OML/cmm/m/it/9 [] \OMS/cmsy/m/n/9   \OML/cmm/
-m/it/9 qbeta\OT1/cmr/m/n/9 (0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 05\OML/cmm/m/it/9 ; ; \OT1/cmr/m/n/9 ))[] + (\OML/cmm/m/i
-t/9 [] \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 qbeta\OT1/cmr/m/n/9 (0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 95\OML/cmm/m/it/9 ; ; 
-\OT1/cmr/m/n/9 ))[] + (\OML/cmm/m/it/9  \OT1/cmr/m/n/9 + (\OML/cmm/m/it/9 =\OT1/cmr/m/n/9 (\OML/cmm/m/it/9  \OT1/cmr/
-m/n/9 + \OML/cmm/m/it/9 \OT1/cmr/m/n/9 )))[]
- []
-
-
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1446,6 +1430,9 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 [42
 
 ]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 407.
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1460,6 +1447,11 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 [44
 
 ]
+Overfull \hbox (29.2531pt too wide) detected at line 422
+\OML/cmm/m/it/9 y[] \OT1/cmr/m/n/9 = []
+ []
+
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1480,23 +1472,14 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 
 [47
 
-] <Tarin_model.png, id=1786, 428.802pt x 349.305pt>
-File: Tarin_model.png Graphic file (type png)
- <use Tarin_model.png>
-<qrcode_github.png, id=1787, 451.6875pt x 451.6875pt>
-File: qrcode_github.png Graphic file (type png)
- <use qrcode_github.png>
-Overfull \vbox (11.62555pt too high) detected at line 508
- []
-
-
+]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [48
 
- <D:/GIT/MAPI_Event/Slides_MAPI/Tarin_model.png> <D:/GIT/MAPI_Event/Slides_MAPI/qrcode_github.png>]
+]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
@@ -1510,10 +1493,10 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 
 [50
 
-] <Arqui.png, id=1904, 598.03426pt x 349.90726pt>
-File: Arqui.png Graphic file (type png)
- <use Arqui.png>
-Overfull \vbox (27.43405pt too high) detected at line 543
+] <Ejem_Elic.png, id=1852, 510.10574pt x 355.3275pt>
+File: Ejem_Elic.png Graphic file (type png)
+ <use Ejem_Elic.png>
+Overfull \vbox (1.92796pt too high) detected at line 449
  []
 
 
@@ -1523,27 +1506,44 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 
 [51
 
- <D:/GIT/MAPI_Event/Slides_MAPI/Arqui.png>]
+ <D:/GIT/MAPI_Event/Slides_MAPI/Ejem_Elic.png>]
+Overfull \hbox (1.94128pt too wide) detected at line 466
+\OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ) = (\OML/cmm/m/it/9 [] \OMS/cmsy/m/n/9   \OML/cmm/
+m/it/9 qbeta\OT1/cmr/m/n/9 (0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 05\OML/cmm/m/it/9 ; ; \OT1/cmr/m/n/9 ))[] + (\OML/cmm/m/i
+t/9 [] \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 qbeta\OT1/cmr/m/n/9 (0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 95\OML/cmm/m/it/9 ; ; 
+\OT1/cmr/m/n/9 ))[] + (\OML/cmm/m/it/9  \OT1/cmr/m/n/9 + (\OML/cmm/m/it/9 =\OT1/cmr/m/n/9 (\OML/cmm/m/it/9  \OT1/cmr/
+m/n/9 + \OML/cmm/m/it/9 \OT1/cmr/m/n/9 )))[]
+ []
+
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [52
 
-] (D:\GIT\MAPI_Event\Slides_MAPI\MAPI_Slides.bbl)
+]
+Overfull \hbox (1.94128pt too wide) detected at line 466
+\OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ) = (\OML/cmm/m/it/9 [] \OMS/cmsy/m/n/9   \OML/cmm/
+m/it/9 qbeta\OT1/cmr/m/n/9 (0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 05\OML/cmm/m/it/9 ; ; \OT1/cmr/m/n/9 ))[] + (\OML/cmm/m/i
+t/9 [] \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 qbeta\OT1/cmr/m/n/9 (0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 95\OML/cmm/m/it/9 ; ; 
+\OT1/cmr/m/n/9 ))[] + (\OML/cmm/m/it/9  \OT1/cmr/m/n/9 + (\OML/cmm/m/it/9 =\OT1/cmr/m/n/9 (\OML/cmm/m/it/9  \OT1/cmr/
+m/n/9 + \OML/cmm/m/it/9 \OT1/cmr/m/n/9 )))[]
+ []
+
+
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [53
 
- <C:/Program Files (x86)/MiKTeX 2.8/tex/latex/beamer/base/art/beamericonarticle.pdf>]
+]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
 [54
-
 
 ]
 Overfull \hbox (45.2559pt too wide) has occurred while \output is active
@@ -1553,15 +1553,108 @@ Overfull \hbox (45.2559pt too wide) has occurred while \output is active
 [55
 
 ]
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[56
+
+]
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[57
+
+]
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[58
+
+] <Tarin_model.png, id=2146, 428.802pt x 349.305pt>
+File: Tarin_model.png Graphic file (type png)
+ <use Tarin_model.png>
+<qrcode_github.png, id=2147, 451.6875pt x 451.6875pt>
+File: qrcode_github.png Graphic file (type png)
+ <use qrcode_github.png>
+Overfull \vbox (11.62555pt too high) detected at line 574
+ []
+
+
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[59
+
+ <D:/GIT/MAPI_Event/Slides_MAPI/Tarin_model.png> <D:/GIT/MAPI_Event/Slides_MAPI/qrcode_github.png>]
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[60
+
+]
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[61
+
+] <Arqui.png, id=2264, 598.03426pt x 349.90726pt>
+File: Arqui.png Graphic file (type png)
+ <use Arqui.png>
+Overfull \vbox (27.43405pt too high) detected at line 609
+ []
+
+
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[62
+
+ <D:/GIT/MAPI_Event/Slides_MAPI/Arqui.png>]
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[63
+
+] (D:\GIT\MAPI_Event\Slides_MAPI\MAPI_Slides.bbl)
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[64
+
+ <C:/Program Files (x86)/MiKTeX 2.8/tex/latex/beamer/base/art/beamericonarticle.pdf>]
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[65
+
+
+]
+Overfull \hbox (45.2559pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[66
+
+]
 \tf@nav=\write5
 \tf@toc=\write6
 \tf@snm=\write7
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 581.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 581.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 647.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 647.
  (D:\GIT\MAPI_Event\Slides_MAPI\MAPI_Slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 581.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 647.
 Package rerunfilecheck Info: File `MAPI_Slides.out' has not changed.
-(rerunfilecheck)             Checksum: 3A5C2ADAEC69D12F2E96F4E1BA6F3F02;878.
+(rerunfilecheck)             Checksum: 4DFC9C1F4BAFFD9DCFD5BCCB5078D1B7;878.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1569,10 +1662,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 15437 strings out of 495285
- 271802 string characters out of 3179872
+ 15484 strings out of 495285
+ 272343 string characters out of 3179872
  450243 words of memory out of 3000000
- 18003 multiletter control sequences out of 15000+200000
+ 18025 multiletter control sequences out of 15000+200000
  16007 words of font info for 60 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,20n,62p,593b,757s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1589,9 +1682,9 @@ Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program File
 sfonts/cm/cmssi9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)
 /MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/c
 mti9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on MAPI_Slides.pdf (55 pages, 2741635 bytes).
+Output written on MAPI_Slides.pdf (66 pages, 3562153 bytes).
 PDF statistics:
- 2170 PDF objects out of 2487 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2533 PDF objects out of 2984 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 

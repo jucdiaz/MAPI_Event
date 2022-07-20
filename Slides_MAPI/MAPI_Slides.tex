@@ -87,7 +87,7 @@
 \title[Sistema de recomendación de inmuebles Bancolombia \hspace{10mm} \insertframenumber/\inserttotalframenumber]{Sistema de recomendación de inmuebles Bancolombia basado en simulación bayesiana y redes neuronales}  
 \author[Juan Camilo Díaz Zapata]{\textbf{Juan Camilo Díaz Zapata} \\ \textit{Cientifico de Datos lider}}
 \institute[Bancolombia]{Gerencia de Modelos Analíticos\\ Centro de Excelencia en Analítica\\ Bancolombia}
-\date[Junio, 2022]{MAPI -- Segunda Conferencia Colombiana de Matemáticas Aplicadas e Industriales}
+\date[Junio, 2022]{Meetup - Machine Learning Colombia}
 
 
 \begin{frame}
@@ -102,7 +102,73 @@
 \section{Introducción}
 \begin{frame}\frametitle{Motivación}
 
-Crear un sistema de recomendación de inmuebles para Bancolombia donde la experiencia del cliente y no cliente al conseguir su próxima vivienda sea memorable, ya que te permita acompañar desde la etapa de búsqueda de la vivienda hasta la legalización del inmueble 
+Crear un sistema de recomendación de inmuebles para Bancolombia donde la experiencia del cliente y no cliente (usuario) al conseguir su próxima vivienda sea memorable, ya que te permita acompañar desde la etapa de búsqueda de la vivienda hasta la legalización del inmueble 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Motivación}
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.35]{portada.png}	
+		%\caption{Pregunta 1: Zona de interés}
+		%\label{Mapes}
+	\end{center}
+\end{figure}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Motivación}
+
+Se planteó crear dos sistemas de recomendación para abarcar todo el mercado posible: \pause \medskip
+
+\begin{itemize}
+    \item [\ding{52}]Sistema de recomendación implícito. \pause \medskip
+    \item [\ding{52}]\textbf{Sistema de recomendación explícito.}
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Recomendador implícito}
+
+Es un sistema de recomendación pensado para los clientes bancolombia, donde es un sistema de recomendación contextual utilizando la mayor información transaccional histórica de cada cliente, este se basa en un sistema de scores de $4$ capas: \pause \medskip
+
+\begin{enumerate}
+    \item Capa geográfica. \pause \medskip
+    \item Capa de similaridad. \pause \medskip
+    \item Capa de afinidad de gustos. \pause \medskip
+    \item Capa financiera.
+\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Recomendador implícito}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.5]{Login.png}	
+		%\caption{Pregunta 1: Zona de interés}
+		%\label{Mapes}
+	\end{center}
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Recomendador implícito}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.5]{recomendados3.png}	
+		%\caption{Pregunta 1: Zona de interés}
+		%\label{Mapes}
+	\end{center}
+\end{figure}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

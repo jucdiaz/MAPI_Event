@@ -1,15 +1,15 @@
 \beamer@endinputifotherversion {3.07pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Introducci\'on}{3}{0}{1}
-\beamer@sectionintoc {2}{Experiencia}{12}{0}{2}
-\beamer@sectionintoc {3}{Implementaci\'on}{18}{0}{3}
-\beamer@subsectionintoc {3}{1}{Preguntas tipo filtro}{18}{0}{3}
-\beamer@subsectionintoc {3}{2}{Preguntas tipo clasificaci\'on: gusto y afinidades}{19}{0}{3}
-\beamer@subsectionintoc {3}{3}{Preguntas tipo clasificaci\'on: composici\'on familiar}{24}{0}{3}
-\beamer@subsectionintoc {3}{4}{Algoritmo Aplicado}{29}{0}{3}
-\beamer@sectionintoc {4}{Resultados}{47}{0}{4}
-\beamer@subsectionintoc {4}{1}{Resultado Simulaci\'on}{47}{0}{4}
-\beamer@subsectionintoc {4}{2}{Resultado Modelaci\'on}{48}{0}{4}
-\beamer@subsectionintoc {4}{3}{Puesta en producci\'on}{49}{0}{4}
-\beamer@sectionintoc {5}{Trabajos en desarrollo}{52}{0}{5}
-\beamer@sectionintoc {6}{Referencias}{53}{0}{6}
+\beamer@sectionintoc {2}{Experiencia}{23}{0}{2}
+\beamer@sectionintoc {3}{Implementaci\'on}{29}{0}{3}
+\beamer@subsectionintoc {3}{1}{Preguntas tipo filtro}{29}{0}{3}
+\beamer@subsectionintoc {3}{2}{Preguntas tipo clasificaci\'on: gusto y afinidades}{30}{0}{3}
+\beamer@subsectionintoc {3}{3}{Preguntas tipo clasificaci\'on: composici\'on familiar}{35}{0}{3}
+\beamer@subsectionintoc {3}{4}{Algoritmo Aplicado}{40}{0}{3}
+\beamer@sectionintoc {4}{Resultados}{58}{0}{4}
+\beamer@subsectionintoc {4}{1}{Resultado Simulaci\'on}{58}{0}{4}
+\beamer@subsectionintoc {4}{2}{Resultado Modelaci\'on}{59}{0}{4}
+\beamer@subsectionintoc {4}{3}{Puesta en producci\'on}{60}{0}{4}
+\beamer@sectionintoc {5}{Trabajos en desarrollo}{63}{0}{5}
+\beamer@sectionintoc {6}{Referencias}{64}{0}{6}
